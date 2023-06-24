@@ -14,10 +14,10 @@ public class Main {
 
     }
 
-    @Bean
+    @Bean//é chamado para mostrar a mensagem de inicialização
     public CommandLineRunner initialization(){
         return args -> {
-            System.out.println("Helo world, Running...");
+            System.out.println("Helo World, Running...");
 
         };
 

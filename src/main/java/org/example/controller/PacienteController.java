@@ -14,20 +14,20 @@ public class PacienteController {
     @Autowired // escreve so dentro do repositorio
     private PacienteRepository repository;
 
-    @GetMapping
+    @GetMapping//monstra todos os pacientes
     public List<Paciente> findAll(){
         List<Paciente> result= repository.findAll();
         return result;
     }
 
-    @GetMapping(value = "/{id}")
+    @GetMapping(value = "/{id}")//acha pacientes por Id
     public Paciente findById(@PathVariable Integer id){
         Paciente result= repository.findById(id).get();
         return result;
     }
 
 
-    @PostMapping
+    @PostMapping//add um paciente com um arquivo de texto(.jason)
     public Paciente insert(@RequestBody Paciente paciente){
         Paciente result= repository.save(paciente);
         return result;

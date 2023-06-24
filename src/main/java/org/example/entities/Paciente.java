@@ -3,7 +3,7 @@ package org.example.entities;
 import jakarta.persistence.*;
 
 @Entity
-@Table(name = "tb_pacientes")
+@Table(name = "tb_pacientes")//cria tabela de pacientes com seus atributos
 public class Paciente {
 
     @Id
