@@ -12,7 +12,7 @@ import java.util.List;
 public class PacienteController {
 
     @Autowired // escreve so dentro do repositorio
-    private PacienteRepository repository;
+    private  PacienteRepository repository;
 
     @GetMapping//monstra todos os pacientes
     public List<Paciente> findAll(){
@@ -32,6 +32,5 @@ public class PacienteController {
         Paciente result= repository.save(paciente);
         return result;
     }
-
 
 }

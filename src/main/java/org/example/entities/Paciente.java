@@ -17,6 +17,17 @@ public class Paciente {
 
     private String aptidao;
 
+
+    public Paciente(String nome, String telefone, String aptidao) {
+        this.nome = nome;
+        this.Telefone = telefone;
+        this.aptidao = aptidao;
+    }
+
+    public Paciente() {
+
+    }
+
     public String getNome() {
         return nome;
     }
